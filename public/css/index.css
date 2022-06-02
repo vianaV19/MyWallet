@@ -1,0 +1,85 @@
+main .container{
+    height: 100vh;
+}
+
+i{
+    padding-right: 5px;
+}
+
+.form-container {
+    align-self: center;
+    width: 400px;
+    color: white;
+    padding: 40px;
+}
+
+.form-container .btn{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.form-container .btn:hover{
+    transition: all 0.1s;
+    background-color:#f79300;
+    color: white;
+    box-shadow: 0 0 0.5em black;
+    border-radius: 10px;
+
+}
+
+#login-form .form-group input{
+    background-color: transparent;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    /* padding-left: 30px; */
+    margin-bottom: 4px;
+}
+
+/* 
+#login-form input[type="email"]{
+    background: url(../imgs/icone-usuario.png) no-repeat left center;
+}
+
+#login-form input[type="password"]{
+    background: url(../imgs/icone-cadeado.png) no-repeat left center;
+} */
+#login-form input[type="checkbox"]::before{
+    background: transparent;
+} 
+
+#login-form .form-group input:active, 
+#login-form .form-group input:focus {
+    outline: none;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+#login-form .form-group input:focus~label, 
+#login-form .form-group  input:valid~label,
+#login-form .form-group  input[type="email"]:not(:placeholder-shown)~label
+{
+    top: -20px;
+    font-size: 15px;
+}
+
+
+.form-group label {
+    position: absolute;
+    transition: all 0.2s;
+    left: 25px;
+    top: 5px;
+    font-size: 14px;
+}
+
+button[type="submit"]{
+    font-size:20px;
+}
+
+

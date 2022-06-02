@@ -1,0 +1,41 @@
+main {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.head {
+    color: white;
+    padding: 20px;
+    padding-left: 50px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgb(255, 198, 93)), color-stop(50%, orange));
+    background-image: -o-linear-gradient(right, rgb(255, 198, 93), orange 50%);
+    background-image: linear-gradient(to left, rgb(255, 198, 93), orange 50%);
+}
+
+.alert{
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+/* PROFILE START  */
+
+.profile-img {
+    border-radius: 150px;
+    border: 1px solid black;
+}
+
+#account-info h1 {
+    font-size: 3em;
+}
+
+#confirm-account-container {
+    padding: 20px;
+    box-shadow: 0 0 0.5em black;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}

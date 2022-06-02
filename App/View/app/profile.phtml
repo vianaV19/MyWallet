@@ -1,0 +1,136 @@
+<? if ($this->view->alert == 'update') { ?>
+
+    <div class="alert alert-success alert-dismissible ">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Success!</strong> User updated!
+    </div>
+<? } else if($this->view->error == 1){?>
+    
+    <div class="alert alert-danger alert-dismissible ">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <strong>Error!</strong> Incorrect Password! 
+    </div>
+<?}?>
+
+<div id="confirm-account-container" class="d-none">
+    <form id="deleteForm" action="profile?action=delete" method="POST">
+        <div>
+            <label for="pass">Type your password</label>
+            <input class="form-control" type="password" id="pass" name="pass">
+        </div>
+
+        <button type="submit" class="btn btn-danger mt-2">Delete</button>
+
+        <button type="button" onclick="cancelConfirm()" class="btn btn-primary mt-2">Cancel</button>
+
+    </form>
+</div>
+
+<header>
+
+    <nav id="nav-container" class="d-flex flex-column flex-shrink-0 p-3 bg-dark float-left fixed-top">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none logo">
+            MyWallet <span class="ml-2" style="color: #f79300;"><i class="fa-solid fa-wallet"></i></span>
+        </a>
+        <hr>
+        <button style="color:white; border-color: white;" class="d-none navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="main-nav" class="h-100 d-flex flex-column">
+            <ul id="navigation" class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="balance" class="nav-link" aria-current="page">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Balance
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        Transfer
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+
+            <div id="dropdown">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2"> <i class="fa-solid fa-user"></i><strong> <?= $_SESSION['username'] ?></strong>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profilse">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sair">Sign out</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </nav>
+</header>
+
+<main>
+    <div class="head">
+        <h1 class="display-4 mb-1 mt-1">Profile</h1>
+        <h2 class="lead">Account informations</h2>
+    </div>
+
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="profile-img" src="https://picsum.photos/300/300" alt="profile">
+            </div>
+            <div class="col-md-6">
+                <div id="account-info">
+                    <h1>Profile Info</h1>
+                    <p class="lead fw-normal">ID: <span><?= $_SESSION['id'] ?></span></p>
+                    <p class="lead fw-normal">Name: <span><?= $_SESSION['username'] ?></span></p>
+                    <p class="lead fw-normal">Email: <span><?= $_SESSION['email'] ?></span></p>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="account-udpate mt-5">
+                    <form id="update-form" action="profile?action=update" method="POST">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Insert new username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Insert new email">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Password</label>
+                            <input type="password" class="form-control" id="pass" name="pass" placeholder="Insert your password" required>
+                        </div>
+
+                        <p class="lead" style="color: red; font-size: 15px;" id="msg"><? if ($this->view->error == 2){ echo "Something went wrong! Probably username or email already exists!"; }else if($this->view->error == 3){ echo "Incorrect Password!"; }?></p>
+
+                        <button type="submit" class="btn btn-primary">Update</button>
+
+                    </form>
+                </div>
+
+                <button style="margin-top:100%" onclick="confirmDialog()" class="btn btn-danger"><a style="color: white; display: block;" href="javascript:scrollToTop()"> Delete Account</a></button>
+
+                <script>
+                    function scrollToTop() {
+                        window.scrollTo(0, 0);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</main>

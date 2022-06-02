@@ -1,0 +1,55 @@
+
+/* html, body, main {
+    overflow-y: hidden;
+} */
+
+
+
+
+.balance-btn {
+    height: auto;
+    background-color: orange;
+    margin-left: 5px;
+    color: white;
+    border-radius:25px ;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.balance-btn:hover{
+    -webkit-box-shadow: 0 0 0.2em black;
+            box-shadow: 0 0 0.2em black;
+    border-radius: 15px;
+    /* background-image: linear-gradient(to left, orange, rgb(255, 198, 93) 80%); */
+    background-color: #343a40;
+}
+
+/* BALANCE CONTAINER START */
+.balance-container {
+    /* border: 1px solid black; */
+    margin: 0;
+}
+
+.head {
+    color: white;
+    padding: 20px;
+    padding-left: 50px;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgb(255, 198, 93)), color-stop(50%, orange));
+    background-image: -o-linear-gradient(right, rgb(255, 198, 93), orange 50%);
+    background-image: linear-gradient(to left, rgb(255, 198, 93), orange 50%);
+
+}
+
+.balance-container .content {
+    padding: 20px;
+}
+
+
+/* ACTIVITIES START */
+
+.activities-container {
+    height: 400px;
+    overflow-y: scroll;
+}   
+

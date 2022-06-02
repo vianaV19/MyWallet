@@ -1,0 +1,143 @@
+<header>
+    <nav id="nav-container" class="d-flex flex-column flex-shrink-0 p-3 bg-dark float-left fixed-top">
+        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none logo">
+            MyWallet <span class="ml-2" style="color: #f79300;"><i class="fa-solid fa-wallet"></i></span>
+        </a>
+        <hr>
+        <button style="color:white; border-color: white;" class="d-none navbar-toggler" data-toggle="collapse" data-target="#main-nav">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div id="main-nav" class="h-100 d-flex flex-column">
+            <ul id="navigation" class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="home.php" class="nav-link active" aria-current="page">
+                        <i class="fa-solid fa-money-bill"></i>
+                        Balance
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                        Transfer
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="fa-solid fa-phone"></i>
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+
+
+            <div id="dropdown">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2"> <i class="fa-solid fa-user"></i><strong> <?= $_SESSION['username'] ?></strong>
+                        </span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="profile">Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="sair">Sign out</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </nav>
+</header>
+
+<main class="float-left bg-light main-normal">
+    <div id="main-container">
+        <div class="row">
+            <div class="col-12 p-0">
+                <div id="balance-container" class="balance-container mt-0">
+                    <div class="head">
+                        <h1 class="display-4 mb-1 mt-1">Balance</h1>
+                        <h2 class="lead">Manage your account with mywallet.</h2>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 pl-5 pt-5 pb-5 d-flex justify-content-center">
+                                <div>
+                                    <h2 class="lead" style="font-size: 30px;">Your money</h2>
+                                    <h3 class="display-2">$<?= $_SESSION['money'] ?></h3>
+                                    <br>
+
+                                    <button class="balance-btn btn btn-lg">
+                                        Withdraw
+                                        <img class="filter-white" width="30px" src="../imgs/withdraw.svg" alt="">
+                                    </button>
+
+                                    <button class="balance-btn btn   btn-lg">
+                                        Deposit
+                                        <img width="30px" src="../imgs/deposit.svg " alt="">
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="col-5 d-none d-md-flex justify-content-center align-items-center">
+                                <img class="mt-2" width="200px" height="200px" src="../imgs/money_pig.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="activities-container">
+                            <div class="container">
+                                <h1>Activities</h1>
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <img width="100px" class="p-2 mr-2 float-left filter-green" src="../imgs/transfer.svg" alt="">
+                                        <div class="d-flex w-80 justify-content-between">
+                                            <h5 class="mb-1">Maria Antonieta</h5>
+                                            <small>3 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Received $500 - PIX</p>
+                                        <small>Picpay</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <img width="100px" class="p-2 mr-2 float-left filter-red" src="../imgs/transfer.svg" alt="">
+                                        <div class="d-flex  w-80 justify-content-between">
+                                            <h5 class="mb-1">Joelson Nunes</h5>
+                                            <small class="text-muted">5 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Transfered $100 - PIX</p>
+                                        <small class="text-muted">NU. Bank</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <img width="100px" class="p-2 mr-2 float-left filter-green" src="../imgs/transfer.svg" alt="">
+                                        <div class="d-flex  w-80 justify-content-between">
+                                            <h5 class="mb-1">Joao Carlos </h5>
+                                            <small class="text-muted">5 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Received $100 - PIX</p>
+                                        <small class="text-muted">Bradesco</small>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <img width="100px" class="p-2 mr-2 float-left filter-red" src="../imgs/transfer.svg" alt="">
+                                        <div class="d-flex w-80 justify-content-between">
+                                            <h5 class="mb-1">Clarice Lispector</h5>
+                                            <small class="text-muted">5 days ago</small>
+                                        </div>
+                                        <p class="mb-1">Transfered $200 - PIX</p>
+                                        <small class="text-muted">Bradesco</small>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="balance-btn btn btn-lg ml-2 my-5">
+                            Extract
+                            <img class="filter-white" width="30px" src="../imgs/download_extract.svg " alt="">
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

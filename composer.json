@@ -1,0 +1,18 @@
+{
+	"vendor-name": "mywallet",
+	"require": {
+		"php": ">= 7.0"
+	},
+	"authors": [
+		{
+			"name": "Matheus Viana",
+			"email": "matheu.viana518062@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"App\\": "App/",
+			"MF\\": "vendor/MF/"
+		}
+	}
+}
