@@ -1,4 +1,4 @@
-# MyWallet
+<h1 style="text-align:center">Mywallet</h1>
 
 ##Resumo
 
