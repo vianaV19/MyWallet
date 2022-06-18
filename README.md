@@ -21,7 +21,6 @@
    <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif" alt="Sign up and Sign In"/>
 </p>
 
----
 
 <h2>💵 Balance and Profile Area</h2>
 
