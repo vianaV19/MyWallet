@@ -14,7 +14,7 @@
 
 
 <p align="center">
-   <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif" />
+   <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif" alt="Sign up and Sign In"/>
 </p>
 
 
@@ -24,7 +24,7 @@
 
 
 <p align="center">
-   ![balance&profile](https://github.com/vianaV19/MyWallet/blob/main/gifs/balance%26profile.gif)
+   <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/balance%26profile.gif" alt="Balance and Prifile Area"/>
 </p>
 
 
