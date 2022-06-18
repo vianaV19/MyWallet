@@ -1,3 +1,7 @@
+<hr>
+<h3 align="center">🎖️PROJETO FINALIZADO🎖️</h3>
+<hr>
+
 <h1 align="center">👛 MyWallet 💰</h1>
 
 <p align="center">Projeto Individual Criado após a finalização do Curso de desenvolvimento Web completo na udemy.</p>
