@@ -56,6 +56,8 @@
 
 - JQuery 
 
+---
+
 <h2>📦️ How to use</h2>
 
 Primeiro é necessário importar o dumping que esta contido no arquivo mywallet.sql no seu banco de dados. 
