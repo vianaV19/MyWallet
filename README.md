@@ -13,17 +13,19 @@
 <h2>🔐 Sign up and Sign in Area</h2>
 
 
+<p align="center">
+   ![login](https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif)
+</p>
 
-![login](C:\Users\matheus\Desktop\login.gif)
 
 
 
 <h2>💵 Balance and Profile Area</h2>
 
 
-
-![balance&profile](https://github.com/vianaV19/MyWallet/blob/main/gifs/balance%26profile.gif)
-
+<p align="center">
+   ![balance&profile](https://github.com/vianaV19/MyWallet/blob/main/gifs/balance%26profile.gif)
+</p>
 
 
 <h2>💻 Technologies</h2>
