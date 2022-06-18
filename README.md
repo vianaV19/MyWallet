@@ -24,7 +24,7 @@
 
 
 <p align="center">
-   <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/balance%26profile.gif" alt="Balance and Prifile Area"/>
+   <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/balanceAndProfile.giff" alt="Balance and Prifile Area"/>
 </p>
 
 
