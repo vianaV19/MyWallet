@@ -14,7 +14,7 @@
 
 
 <p align="center">
-   ![login](https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif)
+   <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif" />
 </p>
 
 
