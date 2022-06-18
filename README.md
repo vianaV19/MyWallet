@@ -2,9 +2,13 @@
 
 <p align="center">Projeto Individual Criado após a finalização do Curso de desenvolvimento Web completo na udemy.</p>
 
+---
+
 <h2>🚀 Objective</h2>
 
 <p style="text-indent: 30px">Projeto fictício que simula uma carteira digital com o intuito de treinar tecnologias Front-end e Back-end.</p>
+
+---
 
 <h2>📖 About the Project</h2>
 
@@ -17,8 +21,7 @@
    <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/login.gif" alt="Sign up and Sign In"/>
 </p>
 
-
-
+---
 
 <h2>💵 Balance and Profile Area</h2>
 
@@ -27,10 +30,9 @@
    <img src="https://github.com/vianaV19/MyWallet/blob/main/gifs/balanceAndProfile.gif" alt="Balance and Prifile Area"/>
 </p>
 
+---
 
 <h2>💻 Technologies</h2>
-
-
 
 ### Tools
 
