@@ -31,7 +31,7 @@ class AppController extends Action
 
                 $user->__set('id', $_SESSION['id']);
                 $user->__set('email', $_SESSION['email']);
-                $user->__set('pass', md5($_POST['pass']));
+                $user->__set('pass', $_POST['pass']);
 
                 if ($user->auth()) {
 

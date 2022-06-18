@@ -11,7 +11,7 @@ class AuthController extends Action
     {
         $user = new User;
         $user->__set('email', $_POST['email']);
-        $user->__set('pass', md5($_POST['pass']));
+        $user->__set('pass', $_POST['pass']);
 
         $user = $user->auth();
 

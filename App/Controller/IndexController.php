@@ -22,7 +22,7 @@ class IndexController extends Action
         $user = new User;
 
         $user->__set('username', $_POST['username']);
-        $user->__set('pass',md5($_POST['pass']));
+        $user->__set('pass',$_POST['pass']);
         $user->__set('email', $_POST['email']);
 
         header('location: ' . ($user->save() ? '/' : '/signUp'));
