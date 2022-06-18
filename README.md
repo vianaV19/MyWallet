@@ -58,6 +58,8 @@
 
 <h2>📦️ How to use</h2>
 
+Primeiro é necessário importar o dumping que esta contido no arquivo mywallet.sql no seu banco de dados. 
+
 Como copiar o projeto:
 
 ```bash
@@ -74,7 +76,7 @@ Como utilizar o projeto:
 ❯ php -S localhost:8080
 ```
 
-Após fazer o dumping do banco de dados basta ir no navegador é acessar a URL http://localhost:8080.
+Após a última instrução basta ir no navegador é acessar a URL http://localhost:8080 e pronto ✌️.
 
 ---
 
