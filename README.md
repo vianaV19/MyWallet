@@ -22,7 +22,7 @@
 
 
 
-![balance&profile](C:\Users\matheus\Desktop\balance&profile.gif)
+![balance&profile](https://github.com/vianaV19/MyWallet/blob/main/gifs/balance%26profile.gif)
 
 
 
