@@ -6,7 +6,7 @@
 
 <p style="text-indent: 30px">Projeto fictício que simula uma carteira digital com o intuito de treinar tecnologias Front-end e Back-end.</p>
 
-<h2>About the Project</h2>
+<h2>📖 About the Project</h2>
 
 <p style="text-indent: 30px">O projeto conta com criptografia MD5 para as senhas, segurança contra SQL Injection e sistema de CRUD para a manipulação da conta do usuário, além de um design responsivo permitindo ser utilizado em qualquer dispositivo.</p>
 
