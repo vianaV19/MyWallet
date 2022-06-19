@@ -4,6 +4,14 @@
 
 <h1 align="center">👛 MyWallet 💰</h1>
 
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/alicepsz98/delight-spa">
+
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/alicepsz98/delight-spa?logo=html">
+
+  <img alt="GitHub repo size in bytes" src="https://img.shields.io/github/repo-size/alicepsz98/delight-spa?color=green">
+</p>
+
 <p align="center">Projeto Individual Criado após a finalização do Curso de desenvolvimento Web completo na udemy.</p>
 
 ---
